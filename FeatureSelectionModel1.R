@@ -1,6 +1,6 @@
 library(Boruta)
-read_file <- read.csv('F:\\Projekte\\Pythonscripts\\weekcount.csv')
+read_file <- read.csv('F:\\Projekte\\Pythonscripts\\allwithwaether.csv')
 set.seed(8000)
-boruta.train <- Boruta(anzahl~., data = read_file, doTrace = 2) 
+boruta.train <- Boruta(anzahl~., data = read_file, doTrace = 10) 
 plot(boruta.train)
 
